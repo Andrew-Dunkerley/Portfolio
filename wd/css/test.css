@@ -1,0 +1,50 @@
+
+body{
+	background-color: lightblue ;
+	font-family:Fixedsys;
+	}
+
+div, h1 {
+	color: red;
+	background-color: #0000FF;
+
+}
+
+div, h2 {
+	color: blue;
+	background-color: red;	
+}
+
+h1 
+{
+   border: solid 5px red;   
+}
+
+h2{
+	
+	border: solid 5px blue;
+}
+body { margin: 10px; font-size: 15px; }
+
+
+#image
+{
+	width:146px;
+	height:166px;
+	margin: 10px 100px 10px 200px;
+	color: blue;
+	border:#0000FF solid 2px;
+	background-image:url(images/Anj.png);
+	
+}
+
+#footer
+{
+	font-size:large;
+	color:#0000FF;
+	width: 1000px;
+	height: 35px;
+	border: #0000FF solid 5px;
+	padding-left: 550px;
+	
+}

@@ -1,0 +1,61 @@
+/* GLOBAL STYLES
+ -------------------------------------------------- */
+
+/* Main content
+ -------------------------------------------------- */
+#content-wrapper {
+    min-height: 250px;
+}
+
+/* Secondary navigation
+ -------------------------------------------------- */
+
+/* Center align the text within the three columns */
+.nav2 .span4 {
+    text-align: center;
+}
+.nav2 .span4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav2 h2 {
+    font-weight: normal;
+}
+
+/* Footer
+ -------------------------------------------------- */
+footer {
+    margin-top: 30px;
+    padding: 120px 50px 20px 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+ -------------------------------------------------- */
+.carousel-control {
+    background-color: transparent;
+    border: 0;
+    font-size: 120px;
+    margin-top: 0;
+}
+
+.carousel-caption {
+    max-width: 550px;
+    padding: 20px;
+    margin: 0 0 30px 70px;
+    color: #fff;
+    background-color: #000000;
+    border-color:#000000;
+    opacity: 0.55;
+}
+.carousel-caption h1, .carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+

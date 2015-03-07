@@ -1,0 +1,74 @@
+
+/* GLOBAL STYLES
+ -------------------------------------------------- */
+
+/* Main content
+ -------------------------------------------------- */
+#content-wrapper {
+	min-height: 250px;
+}
+
+#body {
+	background-color: #FFBF00;
+	
+}
+
+/* Secondary navigation
+ -------------------------------------------------- */
+
+/* Center align the text within the three columns */
+.nav2 .span2 {
+	text-align: center;
+}
+.nav2 .span4 p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.nav2 h2 {
+	font-weight: normal;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+ -------------------------------------------------- */
+.carousel-control {
+	background-color: transparent;
+	border: 0;
+	font-size: 120px;
+	margin-top: 0;
+}
+
+.carousel-caption {
+	max-width: 550px;
+	padding: 20px;
+	margin: 0 0 30px 70px;
+	color: #fff;
+	background-color: #000000;
+	border-color: #000000;
+	opacity: 0.85;
+}
+.carousel-caption h1, .carousel-caption .lead {
+	margin: 0;
+	line-height: 1.00;
+	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+	margin-top: 10px;
+}
+
+/* Footer
+ -------------------------------------------------- */
+footer {
+	margin-top: 30px;
+	padding: 15px 15px 15px 20px;
+	background-color: darkblue;
+	color: yellow;
+	border-radius: 3px;
+}
+
+
+#player-api{ 
+	padding-left: 250px;
+	height: 150px;
+	width: 300px;
+}
+

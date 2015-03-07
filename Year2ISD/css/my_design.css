@@ -1,0 +1,97 @@
+body {
+	background-color: white;
+}
+
+#wrapper {
+	width: 800px;
+	padding-left: 50px;
+	margin: auto;
+
+}
+
+#header {
+	
+	min-height: 5em;
+	margin: 0px;
+	padding-right:40px;
+	padding-top: 20px;
+	border: solid 2px black;
+	padding-bottom : 5px;
+}
+
+#main_nav {
+	padding-top: 20px;
+	border: solid 1px blue;
+	border-radius: .5em;
+	margin: 0em 0 0;
+	padding: 0 0.5em 1.5em 0.5em;
+	padding-right: 20px;
+	font-size: large;
+	background-color: red;
+}
+#main_nav ul {
+	margin: 0;
+	padding: 0;
+
+}
+
+#main_nav li {
+	display: inline;
+	padding: 0em;
+	text-decoration: none;
+	list-style: none;
+	background-color: white;
+	padding-right: 20px;
+}
+#main_nav a: hover {
+	border-bottom: solid 1px #ffa20f;
+}
+#main_nav a.selected {
+	font-weight: bold;
+}
+
+#footer {
+	margin-right:-60px;
+	margin-left: 25px;
+	
+}
+
+div.grid1 {
+	width: 9.17%;
+}
+div.grid2 {
+	width: 19.26%;
+}
+div.grid3 {
+	width: 29.32%;
+}
+div.grid4 {
+	width: 39.44%;
+}
+div.grid5 {
+	width: 49.54%;
+}
+div.grid6 {
+	width: 59.63%;
+}
+div.grid7 {
+	width: 69.72%;
+}
+div.grid8 {
+	width: 79.81%;
+}
+div.grid9 {
+	width: 77.5%;
+	
+}
+div.grid10 {
+	width: 100%;
+}
+div.grid1, div.grid2, div.grid3, div.grid4, div.grid5, div.grid6, div.grid7, div.grid8, div.grid9, div.grid10 {
+	float: left;
+	display: inline;
+	margin-left: 0%;
+}
+div.first {
+	margin-left: 0;
+}  

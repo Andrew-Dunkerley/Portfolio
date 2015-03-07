@@ -1,0 +1,45 @@
+/* GLOBAL STYLES
+ -------------------------------------------------- */
+
+/* Main content
+ -------------------------------------------------- */
+#content-wrapper {
+	min-height: 250px;
+}
+
+#body
+{
+background-color:  #FFBF00;	
+}
+/* Secondary navigation
+ -------------------------------------------------- */
+
+/* Center align the text within the three columns */
+.nav2 .span4 {
+	text-align: center;
+}
+.nav2 .span4 p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.nav2 h2 {
+	font-weight: normal;
+}
+
+table{
+	color:blue;
+	border:solid 5px blue;
+	
+}
+
+
+
+/* Footer
+ -------------------------------------------------- */
+footer {
+	margin-top: 30px;
+	padding: 15px 15px 15px 20px;
+	background-color: darkblue;
+	color: yellow;
+	border-radius: 3px;
+}

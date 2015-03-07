@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Bootstrap</title>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/custom.css" rel="stylesheet">
+      <link href="css/prettify.css" rel="stylesheet">
+   </head>
+
+   <body onload="prettyPrint()">
+      <!-- main-wrapper for positioning
+      ================================================== -->
+      <div id="main-warpper" class="container">
+
+         <!-- NAVBAR
+         ================================================== -->
+         <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+         <div class="container navbar-wrapper">
+            <div class="navbar navbar-inverse">
+               <div class="navbar-inner">
+                  <ul class="nav">
+                     <li><a class="brand" href="index.html">Bootstarp</a></li>
+                     <li><a href="bootstrap_css.html">CSS</a></li>
+                     <li class="active"><a href="bootstrap_js.html">JS</a></li>
+                     <li><a href="bootstrap_bmi.html">BMI Site</a></li>
+                  </ul>
+               </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+
+         </div><!-- /.container navbar-wrapper -->
+
+         <!-- ================================ content-wrapper -->
+         <div id="content-wrapper">
+
+            <h1>Bootstrap JS</h1>
+
+            <p class="alert alert-info">Whereas in the past, DHTML markup such as <code>onclick=&quot;do_js();&quot;</code> was used, now with more consistant support in browsers unobtrusive Javascript can be used to keep events seperate from the HTML code by using <strong>selectors</strong> rather than DHTML to trigger events and HTML5 <code>data-</code> and <code>aria-</code> attributes to pass any necessary data to Javascript.</p>
+
+            <p class="alert alert-success">Seperation of content (XHTML5) from presentation (CSS3) from events (unobtrusive JS) is key to modern web development.</p>
+
+            <p>Fo a complete list of JS components, see the <a target="_blank" href="http://twitter.github.com/bootstrap/javascript.html#overview">Bootstrap Javascript documentation</a>.  As an illustration, consider the following example; click on the modal button to see the result before considering the code in the exercise.</p>
+
+            <!-- Modal -->
+            <!-- Button to trigger modal -->
+            <p><a href="#myModal" role="button" class="btn" data-toggle="modal">Launch modal demo</a></p>
+
+            <!-- modal panel -->
+            <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Modal header</h3>
+               </div>
+               <div class="modal-body">
+                  <p>One fine body…</p>
+               </div>
+               <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                  <button class="btn btn-primary">Save changes</button>
+               </div>
+            </div>
+
+            <div class="well exercise">
+               <h3>Exercise</h3>
+               <ul>
+                  <li>Copy the following template HTML code and save it as, <code>modal.html</code>.</li>
+                  <li>                     <pre class="prettyprint">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+   &lt;head>
+      &lt;meta charset="utf-8">
+      &lt;title>Bootstrap Template&lt;/title>
+      &lt;link href="css/bootstrap.css" rel="stylesheet"> &lt;!-- Bootstrap CSS -->
+      &lt;link href="css/custom.css" rel="stylesheet"> &lt;!-- User defined CSS -->
+   &lt;/head>      
+   &lt;body>
+   
+      &lt;div class="container">
+      
+         &lt;h1>Bootsrtap unobtrusive JS&lt;/h1>
+            &lt;!-- Modal -->
+            &lt;!-- Button to trigger modal -->
+            &lt;p>&lt;a href="#myModal" role="button" class="btn" data-toggle="modal">Launch modal demo&lt;/a>&lt;/p>
+
+            &lt;!-- modal panel -->
+            &lt;div id="myModal" class="modal hide fade" tabindex="-1" 
+               role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+               &lt;div class="modal-header">
+                  &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true">×&lt;/button>
+                  &lt;h3 id="myModalLabel">Modal header&lt;/h3>
+               &lt;/div>
+               &lt;div class="modal-body">
+                  &lt;p>One fine body…&lt;/p>
+               &lt;/div>
+               &lt;div class="modal-footer">
+                  &lt;button class="btn" data-dismiss="modal" aria-hidden="true">Close&lt;/button>
+                  &lt;button class="btn btn-primary">Save changes&lt;/button>
+               &lt;/div>
+            &lt;/div>         
+      &lt;/div>
+               
+      &lt;script src="js/jquery-latest.js">&lt;/script> &lt;!-- JQuery JS -->
+      &lt;script src="js/bootstrap.js">&lt;/script> &lt;!-- Bootstrap JS -->
+      
+   &lt;/body>
+&lt;/html>
+</pre></li>
+                  <li>Open <code>modal.html</code> in Chrome.</li>
+                  <li>View the HTML and the CSS code in the developer window
+                     <ul>
+                        <li>Note the hyperlink <code>href=&quot;#myModal&quot;</code> which is the <code>id</code> of the modal panel, <code>&lt;div id="myModal"</code>.  This is an example of how the association between the hyperlink and the div is made unobtrusively without additional markup such as <code>onclick</code></li>
+                        <li>The HTML5 <code>data-</code> attributes such as <code>data-toggle</code> and <code>data-dismiss</code> provide the necessary data for the JS to complete the transition.</li>
+                        <li>Accessibility is catered for with the <code>aria-</code> attributes; for example, note the <code>aria-labelledby="myModalLabel"</code> specifies the id for <code>&lt;h3 id="myModalLabel">Modal header&lt;/h3></code>.  A screen reader can therefore read out the content of the heading.</li>
+                        <li>The presentation as always is defined with the CSS classes; right-mouse click on the modal button and select &quot;Inspect Element&quot; to see the CSS properties.</li>
+                        <li>In the developer window, select the <code>&lt;div id="myModal"</code> and note the CSS has <code>display: none;</code>.  The <code>modal hide fade</code> CSS classes determine the presentation of the modal panel.</li>
+                     </ul></li>
+               </ul>
+            </div><!-- /.exercise -->
+
+         </div><!-- /.content-wrapper -->
+         <p class="pull-right"><a href="#">Back to top</a></p>
+
+         <!-- FOOTER -->
+         <footer>
+            <p>2012 &ndash; Chubkin &middot; :)</p>
+         </footer>
+
+      </div><!-- /#main-wrapper -->
+
+      <!-- Bootstrap -->
+      <script src="js/jquery-latest.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/prettify.js"></script>
+   </body>
+</html>

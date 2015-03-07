@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Bootstrap</title>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/custom.css" rel="stylesheet">
+      <link href="css/prettify.css" rel="stylesheet">
+   </head>
+
+   <body onload="prettyPrint()">
+      <!-- main-wrapper for positioning
+      ================================================== -->
+      <div id="main-warpper" class="container">
+
+         <!-- NAVBAR
+         ================================================== -->
+         <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+         <div class="container navbar-wrapper">
+            <div class="navbar navbar-inverse">
+               <div class="navbar-inner">
+                  <ul class="nav">
+                     <li class="active"><a class="brand" href="index.html">Bootstarp</a></li>
+                     <li><a href="bootstrap_css.html">CSS</a></li>
+                     <li><a href="bootstrap_js.html">JS</a></li>
+                     <li><a href="bootstrap_bmi.html">BMI Site</a></li>
+                  </ul>
+               </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+
+         </div><!-- /.container navbar-wrapper -->
+
+         <!-- ================================ content-wrapper -->
+         <div class="well">
+
+            <h1>What is it all about ... ?</h1>
+            <p class="alert alert-success">Our aim is an introduction to the <a target="_blank" href="http://twitter.github.com/bootstrap/index.html">Bootstrap framework</a> developed by the good folks at Twitter for CSS and JS.</p>
+            <h2>Where to start?</h2>
+            <p class="alert alert-danger">Using a framework is essentially through a set of <strong>selector</strong> names that are defined in the framework with associated CSS and JS.</p>
+            <p>A good start is to understand how <strong>selectors</strong> are used in practice.  Test yourself (and if necessary revise) the answers to the questions on <a href="http://chubkin.heroku.com/tutorials/show/css/_necessary">this page</a>.  Once the answers are clear in your mind, you are ready to start.</p>
+            <h2>Bootstrap template</h2>
+            <p>We have downloaded a copy of the CSS and JS source code from the <a target="_blank" href="http://twitter.github.com/bootstrap/index.html">Bootstrap website</a> and saved it in the css and js directories.  The following XHTML5 template uses these Bootstrap files.</p>
+            <pre class="prettyprint">
+&lt;!DOCTYPE html>
+&lt;html lang=&quot;en&quot;>
+   &lt;head>
+      &lt;meta charset=&quot;utf-8&quot;>
+      &lt;title>Bootstrap Template&lt;/title>
+      &lt;link href="css/bootstrap.css" rel="stylesheet"> &lt;!-- Bootstrap CSS -->
+      &lt;link href="css/custom.css" rel="stylesheet"> &lt;!-- User defined CSS -->
+   &lt;/head>      
+   &lt;body>
+   
+      &lt;h1>Hello World Wide Web!&lt;/h1>
+               
+      &lt;script src="js/jquery-latest.js">&lt;/script> &lt;!-- JQuery JS -->
+      &lt;script src="js/bootstrap.js">&lt;/script> &lt;!-- Bootstrap JS -->
+      
+   &lt;/body>
+&lt;/html>
+</pre>
+            <div class="well">
+               <ul>
+                  <li>Note the <code class="prettyprint">&lt;link href="css/bootstrap.css" rel="stylesheet"></code> element in the <code>head</code> section linking to the Bootstrap CSS file allowing use of selectors defined in <a target="_blank" href="http://twitter.github.com/bootstrap/base-css.html">Bootstrap Base CSS</a>, <a target="_blank" href="http://twitter.github.com/bootstrap/scaffolding.html">Scaffolding for layouts</a> and <a target="_blank" href="http://twitter.github.com/bootstrap/components.html">Components</a> for a variety of common CSS components.</li>
+                  <li>The <code class="prettyprint">&lt;link href="css/custom.css" rel="stylesheet"></code> is specified <strong>after</strong> the Bootstrap CSS link.  This is allows for any additional custom CSS to be included in a seperate file.</li>
+                  <li>The two <code>&lt;script></code> elements are included at the end of the file for faster page display and include JQuery and Bootstrap JS.  This allows for reuse of <a target="_blank" href="http://twitter.github.com/bootstrap/javascript.html">Bootstrap JS components</a></li>
+                  <li>We shall use the above code as a template in all the <a href="css.html">CSS</a> and <a href="js.html">JS</a> examples.</li>
+               </ul>
+               <p>Move onto the <a href="bootstrap_css.html">CSS exercise</a>.</p>
+            </div>
+
+         </div><!-- /.content-wrapper -->
+
+         <!-- FOOTER -->
+         <footer>
+            <p>2012 &ndash; Chubkin &middot; :)</p>
+         </footer>
+
+      </div><!-- /#main-wrapper -->
+
+      <!-- Bootstrap -->
+      <script src="js/jquery-latest.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/prettify.js"></script>
+   </body>
+</html>

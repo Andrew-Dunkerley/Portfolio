@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>BMI with Bootstrap </title>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/bmi.css" rel="stylesheet">
+   </head>
+
+   <body>
+      <!-- main-wrapper for positioning
+      ================================================== -->
+      <div class="container">
+
+         <!-- NAVBAR
+         ================================================== -->
+         <nav>
+           <div class="navbar-wrapper">
+   <div class="navbar navbar-inverse">
+      <div class="navbar-inner">
+         <ul class="nav">
+            <li class="active"><a class="brand" href="#">BMI</a></li>
+            <li><a href="bmi_calculator.html">BMI Calculator</a></li>
+         </ul>
+      </div><!-- /.navbar-inner -->
+   </div><!-- /.navbar -->
+</div><!-- /.navbar-wrapper -->
+         </nav>
+
+         <!-- Content
+         ================================================== -->
+         <div id="content-wrapper">
+            <!-- Carousel
+================================================== -->
+<div id="myCarousel" class="container carousel">
+   <div class="carousel-inner">
+      <div class="item active">
+         <img src="img/img-01.jpg" alt="">
+         <div class="container">
+            <div class="well carousel-caption">
+               <h1>Health check!</h1>
+               <p class="lead">A rough guide to health is the BMI.</p>
+               <p><a class="btn btn-large btn-primary" href="view_bmi_form.html">
+                Calculate your BMI &raquo;</a></p>
+            </div>
+         </div>
+      </div>
+      <div class="item">
+         <img src="img/img-02.jpg" alt="">
+         <div class="container">
+            <div class="well carousel-caption">
+               <h1>BMI facts</h1>
+               <p class="lead">What is the body mass index (BMI)? How is it categorised?.</p>
+               <a class="btn btn-large btn-primary" target="_blank" 
+                href="http://en.wikipedia.org/wiki/Body_mass_index">Read all about it &raquo;</a>
+            </div>
+         </div>
+      </div>
+      <div class="item">
+         <img src="img/img-03.jpg" alt="">
+         <div class="container">
+            <div class="carousel-caption">
+               <h1>Healthy eating</h1>
+               <p class="lead">Food, material consisting essentially of protein, 
+                carbohydrate, and fat used in the body of an organism to sustain growth, 
+                repair, and vital processes and to furnish energy.</p>
+               <a class="btn btn-large btn-primary" 
+                href="http://www.nhs.uk/livewell/healthy-eating/pages/healthyeating.aspx"> 
+                Healthy eating &raquo;</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+   <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+</div><!-- /.carousel -->
+         </div><!-- /#content-wrapper -->
+
+         <!-- Secondary navigation
+================================================== -->
+<div class="nav2">
+   <div class="row">
+      <h1 class="pull-right">Click an image!</h1>
+   </div>
+   <!-- Three columns of text below the carousel -->
+   <div class="row">
+      <div class="span4">
+         <a data-toggle="collapse" data-target="#dt1"><img class="img-circle" src="img/img-01.jpg"></a>
+         <div id="dt1" class="collapse">
+            <h2>Health check!</h2>
+            <p>A good indicator of general health is the BMI. 
+               It is your weight divided by your height squared.</p>
+            <p><a class="btn" href="bmi_calculator.html">Calculate your BMI &raquo;</a></p>
+         </div>
+      </div><!-- /.span4 -->
+      <div class="span4">
+         <a data-toggle="collapse" data-target="#dt2"><img class="img-circle" src="img/img-02.jpg"></a>
+         <div id="dt2" class="collapse">
+            <h2>BMI facts</h2>
+            <p>What is the body mass index (BMI)? How is it categorised? 
+               and which age groups does it apply to?</p>
+            <p><a class="btn" target="_blank" href="http://en.wikipedia.org/wiki/Body_mass_index">
+               Read all abou it! &raquo;</a></p>
+         </div>
+      </div><!-- /.span4 -->
+      <div class="span4">
+         <a data-toggle="collapse" data-target="#dt3"><img class="img-circle" src="img/img-03.jpg"></a>
+         <div id="dt3" class="collapse">
+            <h2>Healthy eating</h2>
+            <p>Food, material consisting of protein, carbohydrate, and fat used to sustain growth.</p>
+            <p><a class="btn" target="_blank" 
+               href="http://www.nhs.uk/LiveWell/healthy-eating/Pages/Healthyeating.aspx">
+               Healthy eating &raquo;</a></p>
+         </div>
+      </div><!-- /.span4 -->
+   </div><!-- /.row -->
+</div><!-- /.nav2 -->   
+
+         <!-- FOOTER -->
+         <footer>
+            <p>2012 Chubkin :) · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+         </footer>
+
+      </div><!-- /#main-wrapper -->
+
+      <!-- Bootstrap -->
+      <script src="js/jquery-latest.js"></script>
+      <script src="js/bootstrap.js"></script>
+
+   </body>
+</html>

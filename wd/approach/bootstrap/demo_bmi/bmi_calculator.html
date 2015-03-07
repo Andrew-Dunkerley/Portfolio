@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>BMI with Bootstrap </title>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/bmi.css" rel="stylesheet">
+   </head>
+
+   <body>
+      <!-- main-wrapper for positioning
+      ================================================== -->
+      <div class="container">
+
+         <!-- NAVBAR
+         ================================================== -->
+         <nav>
+            <div class="navbar-wrapper">
+               <div class="navbar navbar-inverse">
+                  <div class="navbar-inner">
+                     <ul class="nav">
+                        <li class="active"><a class="brand" href="index.html">BMI</a></li>
+                        <li><a href="#">BMI Calculator</a></li>
+                     </ul>
+                  </div><!-- /.navbar-inner -->
+               </div><!-- /.navbar -->
+            </div><!-- /.navbar-wrapper -->
+         </nav>
+
+         <!-- Content
+         ================================================== -->
+         <div id="content-wrapper">
+            <!-- Row with 2 span6 columns -->
+            <div class="row">
+               <div class="span6">
+                  <!-- first column -->
+                  <!-- bmi Form -->
+                  <div class="well bmi-form">
+                     <h2>BMI Calculator</h2>
+                     <form class="form-horizontal" method="get" action="#">
+                        <div class="control-group">
+                           <label class="control-label" for="weight">Weight</label>
+                           <div class="controls">
+                              <input type="text" id="weight" placeholder="Weight in Kilograms">
+                           </div>
+                        </div>
+                        <div class="control-group">
+                           <label class="control-label" for="height">Height</label>
+                           <div class="controls">
+                              <input type="text" id="height" placeholder="Height in Meters">
+                           </div>
+                        </div>
+                        <div class="control-group">
+                           <div class="controls">
+                              <button type="submit" class="btn">Calculate BMI</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div><!-- /.bmi_form -->
+               </div><!-- /.first column -->
+               <div class="span6">
+                  <!-- second column -->
+                  <p class="alert alert-info">The Body Mass Index(BMI) is a good way to check if you are a
+                     healthy weight. Use our BMI calculator to check  you are a healthy weight for your height.</p>
+                  <p class="alert alert-danger">For adults, a BMI of less than 15 is considered very severly
+                     underweight and a BMI of over 40 very severly obese.</p>
+                  <p class="alert alert-success">A normal healthy weight has a BMI of 18.5 to 25.</p>
+               </div><!-- /.second column -->
+            </div>
+         </div><!-- /#content-wrapper -->
+
+         <!-- Secondary navigation
+         ================================================== -->
+         <div class="nav2">
+            <div class="row">
+               <h1 class="pull-right">Click an image!</h1>
+            </div>
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+               <div class="span4">
+                  <a data-toggle="collapse" data-target="#dt1"><img class="img-circle" src="img/img-01.jpg"></a>
+                  <div id="dt1" class="collapse">
+                     <h2>Health check!</h2>
+                     <p>A good indicator of general health is the BMI.
+                        It is your weight divided by your height squared.</p>
+                     <p><a class="btn" href="bmi_calculator.html">Calculate your BMI &raquo;</a></p>
+                  </div>
+               </div><!-- /.span4 -->
+               <div class="span4">
+                  <a data-toggle="collapse" data-target="#dt2"><img class="img-circle" src="img/img-02.jpg"></a>
+                  <div id="dt2" class="collapse">
+                     <h2>BMI facts</h2>
+                     <p>What is the body mass index (BMI)? How is it categorised?
+                        and which age groups does it apply to?</p>
+                     <p><a class="btn" target="_blank" href="http://en.wikipedia.org/wiki/Body_mass_index"> Read all abou it! &raquo;</a></p>
+                  </div>
+               </div><!-- /.span4 -->
+               <div class="span4">
+                  <a data-toggle="collapse" data-target="#dt3"><img class="img-circle" src="img/img-03.jpg"></a>
+                  <div id="dt3" class="collapse">
+                     <h2>Healthy eating</h2>
+                     <p>Food, material consisting of protein, carbohydrate, and fat used to sustain growth.</p>
+                     <p><a class="btn" target="_blank"
+                        href="http://www.nhs.uk/LiveWell/healthy-eating/Pages/Healthyeating.aspx"> Healthy eating &raquo;</a></p>
+                  </div>
+               </div><!-- /.span4 -->
+            </div><!-- /.row -->
+         </div><!-- /.nav2 -->
+         <!-- FOOTER -->
+         <footer>
+            <p>2012 Chubkin :) · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+         </footer>
+
+      </div><!-- /#main-wrapper -->
+
+      <!-- Bootstrap -->
+      <script src="js/jquery-latest.js"></script>
+      <script src="js/bootstrap.js"></script>
+
+   </body>
+</html>

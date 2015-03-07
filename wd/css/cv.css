@@ -1,0 +1,21 @@
+ body
+{
+	
+	
+	font-family:"calibri";
+	font-size:medium;
+	color: black;
+	background-color:lightblue;
+	
+}
+
+#image
+{
+	width:146px;
+	height:166px;
+	margin: -130px 0px 0px 220px;
+	color: blue;
+	border:#0000FF solid 2px;
+	background-image:url(images/Anj.png);
+	
+}

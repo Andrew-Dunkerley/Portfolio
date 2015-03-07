@@ -1,0 +1,101 @@
+body{
+	background-color:lightblue;
+}
+
+#main_nav {
+	border: solid 1px #e1e1e1;
+	border-radius: .5em;
+	margin: 0 0.25em 0 0;
+	padding: 0 0.5em 1.5em 0.5em;
+}
+#main_nav ul {
+	margin: 0;
+	padding: 0;
+}
+#main_nav li {
+	list-style: none;
+}
+#main_nav a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+	border-bottom: solid 1px #e1e1e1;
+}
+#main_nav a: hover {
+	border-bottom: solid 1px #ffa20f;
+}
+#main_nav a.selected {
+	font-weight: bold;
+}
+
+#header {
+	min-height: 5em;
+}
+#content {
+	border: solid 1px #e1e1e1;
+	border-radius: 0.5em;
+	min-height: 400px;
+}
+#content *.tip {
+	border: solid 1px #ffa20f;
+	border-radius: 0.5em;
+	margin: 1em;
+	padding: 1em;
+}
+#content *.tip li {
+	margin-left: 1em;
+}
+#content div.exercise {
+	margin: 1em;
+	padding: 1em;
+	border: solid 1px green;
+	border-radius: 7px;
+}
+#content *.code {
+	border: 2px solid #E1E1E1;
+	border-radius: 7px 7px 7px 7px;
+	padding: 1em;
+	margin: 1em;
+}
+#content *.tip:hover, #content *.code:hover {
+	background: #f5f5f5;
+}
+
+div.grid1 {
+	width: 9.17%;
+}
+div.grid2 {
+	width: 19.26%;
+}
+div.grid3 {
+	width: 29.32%;
+}
+div.grid4 {
+	width: 39.44%;
+}
+div.grid5 {
+	width: 49.54%;
+}
+div.grid6 {
+	width: 59.63%;
+}
+div.grid7 {
+	width: 69.72%;
+}
+div.grid8 {
+	width: 79.81%;
+}
+div.grid9 {
+	width: 89.90%;
+}
+div.grid10 {
+	width: 100%;
+}
+div.grid1, div.grid2, div.grid3, div.grid4, div.grid5, div.grid6, div.grid7, div.grid8, div.grid9, div.grid10 {
+	float: left;
+	display: inline;
+	margin-left: 0.9%;
+}
+div.first {
+	margin-left: 0;
+}  

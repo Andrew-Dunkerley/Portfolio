@@ -1,0 +1,240 @@
+/* ========================================================================
+ *   HEADER SECTION
+ */
+
+
+#header{
+
+background-color:black;
+
+}
+
+nav{
+    float: right;
+    width: 65%;
+    text-align: right;
+    padding: 10px 0;
+}
+
+nav li
+{
+
+
+    margin-top: 25px;
+    margin-left: 5%;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+
+
+}
+
+.logo-block-icon{
+    float:left;
+}
+
+.logo-block-text{
+    margin-top: 20px;
+    float:left;
+
+}
+
+.logo-block{
+    float: left;
+    width: 30%;
+}
+
+
+/* ========================================================================
+ *   TEXT RULES
+ */
+
+#previous h3{ /* targets all h3's that are in a container with an id of previous */
+    color: Black;
+}
+
+#references h3{ /* targets all h3's that are in a container with an id of references */
+    color: black;
+}
+
+#previousheader h2{ /* targets all h3's that are in a container with an id of previous */
+    color: Black;
+}
+
+#referenceheader h2{ /* targets all h3's that are in a container with an id of references */
+    color: black;
+}
+
+
+
+/* ========================================================================
+ *   MEDIA QUERIES
+ */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {  }
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	   .logo-block{
+	       float: none;
+           width: 100%;
+           text-align: center;
+	   }
+       .logo-block-icon, .logo-block-text{
+           float: none;
+       }
+       nav{
+        width: 100%;
+        float: none;
+        text-align: center;
+       }
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+
+
+    }
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+        #headspan.container{
+            width: 100%;
+        }
+	   .logo-block{
+           float: none;
+           width: 100%;
+           text-align: center;
+       }
+       .logo-block-icon, .logo-block-text{
+           float: none;
+       }
+       nav{
+        width: 100%;
+        float: none;
+        text-align: center;
+       }
+       nav li{
+            margin: 0 5px;
+       }
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+       .logo-block{
+           float: none;
+           width: 100%;
+           text-align: center;
+       }
+       .logo-block-icon, .logo-block-text{
+           float: none;
+       }
+        nav{
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        nav li{
+            display: block;
+        }
+
+     }
+
+
+
+
+#hero
+{
+    padding-top: 1%;
+    display: block;
+    text-align: center;
+    background-color: #C0C0C0;
+    font-weight: bold;
+    font-family: "Lato",sans-serif;
+}
+
+#previous{
+
+    color:black;
+    text-align: center;
+
+}
+
+#previousheader{
+
+    padding-top: 1%;
+    display: block;
+    font-weight: bold;
+    font-family: "Lato",sans-serif;
+
+}
+
+
+#contactbutton{
+
+
+
+color: #FFF;
+background-color: black;
+display: inline-block;
+height: 38px;
+padding: 0 30px;
+color: #555;
+text-align: center;
+font-size: 11px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: .1rem;
+text-transform: uppercase;
+text-decoration: none;
+white-space: nowrap;
+
+border-radius: 4px;
+border: 1px solid white;
+cursor: pointer;
+box-sizing: border-box;
+
+}
+
+
+
+
+#references{
+color: black;
+     text-align: center;
+
+}
+#referenceheader{
+
+    text-align:center;
+
+}
+
+#footer{
+text-align: center;
+background-color: black;
+}
+
+#footerimage{
+border: solid white 1px;
+float: left;
+
+
+}
+
+}
+#rheader{
+
+    color:black;
+}
+
+#copyright{
+    margin-top: 20px;
+    text-align:center;
+
+}
+

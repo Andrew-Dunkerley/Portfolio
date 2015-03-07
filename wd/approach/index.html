@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Approach</title>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/custom.css" rel="stylesheet">
+      <link href="css/prettify.css" rel="stylesheet">
+   </head>
+
+   <body onload="prettyPrint()">
+      <!-- main-wrapper for positioning
+      ================================================== -->
+      <div id="main-warpper" class="container">
+
+         <!-- NAVBAR
+         ================================================== -->
+         <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+         <div class="navbar-wrapper">
+            <div class="navbar navbar-inverse">
+               <div class="navbar-inner">
+                  <ul class="nav">
+                     <li class="active"><a class="brand" href="index.html">Project</a></li>
+                     <li><a href="bootstrap/bootstrap_css.html">Bootstrap - CSS</a></li>
+                     <li><a href="bootstrap/bootstrap_js.html">Bootstrap - JS</a></li>
+                     <li><a href="bootstrap/bootstrap_bmi.html">Bootstrap - BMI Site</a></li>
+                  </ul>
+               </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+
+         </div><!-- /.container navbar-wrapper -->
+
+         <div class="well">
+
+            <h1>Where, What, When, and How? (W3H :)</h1>
+            <p class="alert alert-success">Our aim is to start with a blank sheet and develope a website.</p>
+            <h2>Where to start?</h2>
+            <p class="alert alert-danger">A good knowledge of HTML5, CSS (test yourself and if necessary revise the answers to the questions on <a href="http://chubkin.heroku.com/tutorials/show/css/_necessary">this page</a>).</p>
+            <p class="alert alert-danger">Either build a small framework or use an open source framework such as Bootstrap, see the Bootstrap exercises in the navigation bar.</p>
+            <h2>What to start with?</h2>
+            <ol>
+               <li>Decide <strong>what</strong> the requirements are for your project.</li>
+               <li>Visit similar websites for ideas.</li>
+               <li><span class="alert-danger">Don&apos;t necessarily trust the sites you visit for their HTML and CSS code, it may well be out of date</span> but do make a note of the <span class="alert-success"><strong>layout, navigation</strong>, and <strong> colour scheme</strong></span></li> 
+                          </ol>
+            <h2>When to start coding?</h2>
+            <p class="alert alert-danger"><strong>Not yet!</strong></p>
+            <p>Here is a list of tasks you should complete before starting to code your site.</p>
+            <ul>
+               <li><strong>Sketch out each page layout</strong>. Bear in mind that you will use the <a target="_blank" href="http://twitter.github.com/bootstrap/scaffolding.html#layouts">Bootstrap layout and grid components</a> to code this.  The grid component divides your page layout into rows with upto 12 columns, so see your page layout in terms of <strong>rows</strong> and <strong>columns</strong>; for example, header, content and footer rows with the content row having 2 columns.</li>
+               <li><strong>Navigation</strong> is your next task.  This is likely to be an unordered list with hyperlinks as list items.  Write down the navigation hyperlink addresses on your layout sketch.</li>
+               <li><strong>Choose a colour scheme</strong>. <a target="_blank" href="http://docs.webplatform.org/wiki/concepts/color_theory">Read this article</a> and use the tools such as the colour wheel in the article to help choose the colour scheme and make a note of the colour hexidecimal numbers on your layout sketch.</li>
+               <li><strong>Prepare your assets</strong>.  For a first prototype you may not have the final images; use something similar and scale it to the size it would appear on the page.  For other assets, particularly, sound and video, use small sample files to work with.</li>
+            </ul>
+            <p>Create a project with associated folders and files.</p>
+            <div class="alert alert-info">
+              <p><strong>An important word on naming convention - BE CONSISTENT!</strong></p><p>For example, index.html, about_us.html (all lower case with an _ character to seperate words); similarly for HTML class and id names be consistent, for example, main-container, main-nav, secondary-nav (all lower case with words seperated by a - character).</p>
+            </div>
+            <ol>
+               <li>In Aptana, create a web project and save it as <strong>website</strong></li>
+               <li>In the <strong>website</strong> project, create folders <strong>js, css, graphics, sound</strong>, and <strong>video</strong></li>
+               <li>From your <a target="_blank" href="../bootstrap/index.html">Bootstrap exercise</a> project copy the Bootstrap Javascript files <strong>bootstrap.js</strong> and <strong>jquery-latest.js</strong> into the <strong>js</strong> folder (you can use copy &amp; paste in Aptana).</li>
+               <li>Similarly, copy the Bootstrap CSS file <strong>bootstrap.css</strong> into the <strong>css</strong> folder.</li>
+               <li>You are now ready to test and validate a template file.  You can use a copy of this template file to start the coding for each page in your site.  Paste the following code and save it in your project as <strong>bootstrap_template.html</strong>                  <pre class="prettyprint">
+&lt;!DOCTYPE html>
+&lt;html lang=&quot;en&quot;>
+   &lt;head>
+      &lt;meta charset=&quot;utf-8&quot;>
+      &lt;title>Bootstrap Template&lt;/title>
+      &lt;link href="css/bootstrap.css" rel="stylesheet"> &lt;!-- Bootstrap CSS -->
+      &lt;link href="css/main.css" rel="stylesheet"> &lt;!-- User defined CSS -->
+   &lt;/head>      
+   &lt;body>
+   
+      &lt;h1>TODO: Bootstrap template - replace with page content&lt;/h1>
+               
+      &lt;script src="js/jquery-latest.js">&lt;/script> &lt;!-- JQuery JS -->
+      &lt;script src="js/bootstrap.js">&lt;/script> &lt;!-- Bootstrap JS -->
+      
+   &lt;/body>
+&lt;/html>
+</pre></li>
+               <li>Validate <strong>bootstrap_template.html</strong> and drag it into Chrome to check the file.</li>
+            </ol>
+            <p class="alert alert-success">You are now ready to start coding your site.</p>
+            <h2>How to start coding?</h2>
+            <p>Your sketches for each page should have the layout, navigation and colour scheme details to allow you to start coding without loosing your sanity in the detail of CSS and valid HTML.  Go through the following steps for each page, each time copying the bootstrap_template.html code as your starting point.</p>
+            <p>Let us start with the index page, right-mouse click on <strong>bootstrap_template.html</strong> file and paste and save it as <strong>index.html</strong></p>
+            <ol>
+               <li>Refer to your sketch and use the <a target="_blank" href="http://twitter.github.com/bootstrap/scaffolding.html#layouts">Bootstrap layout and grid components</a> to code <strong>ONLY THE LAYOUT</strong>.  Leave a TODO comment in each column of each row.</li>
+               <li>In the Aptana source code window, right-mouse click and select Source > Format.  Save the file.  Check there are no red circles in the left margin next to the code indicating any errors; and if so, correct any errors.</li>
+               <li class="alert-danger"><strong>Before proceeding any further</strong> validate your code using the <a target="_blank" href="http://validator.w3.org/#validate_by_upload">W3C validator</a> and correct any errors.  Neither CSS or JS would work without valid HTML code.</li>
+               <li>Drag the file into Chrome and use the developer tools to inspect the code and satisfy yourself that the display is as you expect it.</li>
+            </ol>
+            <p>Repeat the above steps except this time in step 1 refer to your sketch for the navigation details and the <a target="_blank" href="http://twitter.github.com/bootstrap/components.html#navs">Bootstrap Nav components.</a></p>
+            <p>Next, repeat the above steps for each row of the layout except this time in step 1 refer to your sketch for the particular row details and any <a target="_blank" href="http://twitter.github.com/bootstrap">Bootstrap components</a> as well your own CSS.</p>
+            <p class="alert alert-info">Instead of using <strong>class</strong> and <strong>id</strong> names declared by Bootstrap, it is good practice to declare your own classes and ids for your custom CSS declarations.  Notice, we have linked to a <strong>main.css</strong> file for the custom CSS code.  Being linked after the bootstrap.css means it will override any Bootstrap declaration.</p>
+
+            <p class="alert alert-success">Design and development is cyclical and you are likely to repeat the above (making modifications and even major changes) before finalising your site.  The preparation work, validation, and being systematic is essential and does save time!</p>
+         </div><!-- /.content-wrapper -->
+
+         <!-- FOOTER -->
+         <footer>
+            <p>2012 &ndash; Chubkin &middot; :)</p>
+         </footer>
+
+      </div><!-- /#main-wrapper -->
+
+      <!-- Bootstrap -->
+      <script src="js/jquery-latest.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/prettify.js"></script>
+   </body>
+</html>

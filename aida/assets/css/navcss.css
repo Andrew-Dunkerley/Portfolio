@@ -1,0 +1,72 @@
+#main-nav li {
+	display: inline;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: white;
+	border: 1px solid white;
+}
+
+#main-nav1 li {
+   
+	display: inline;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: white;
+	border: 1px solid white;
+
+}
+
+#contactinfo{
+
+	padding-left: 100px;
+}
+
+#contactinfo1
+{
+    
+    margin-left: 732px;
+}
+
+
+#background {
+    background-image:url('background.png');
+    background-size: 100%;
+    height: 4000px;
+}
+
+
+#gsb{
+    padding: 50px;
+    width: 600px;
+    
+    
+}
+
+#facebook{
+    
+    background-color: white;
+    width: 290px;
+    height: 20px;
+     border-radius: 16px; /* half of button size + padding */
+  -moz-border-radius: 16px;
+}
+
+h4{
+    
+    color: white;
+}
+
+
+
+#navhead{
+    
+    color: white;
+    font-size: 250%;
+}
+
+#navhead1{
+    
+    margin-left: 732px;
+    color: white;
+    font-size: 250%;
+}

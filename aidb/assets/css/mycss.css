@@ -1,0 +1,774 @@
+
+#header{
+
+background-color:black;
+
+}
+
+
+#navspan{
+padding-top: 30px;
+}
+
+#profilecontainer p{
+    
+    color: black;
+    font-family: sans-serif ;
+    
+    
+  
+}
+
+
+
+
+ 
+
+
+
+
+#slider1_container{
+    
+    
+    border: solid #B2E6FF 7px;
+   border-radius: 4%;
+ overflow: hidden;
+}
+
+#slides{
+    
+    moz-border-radius: 30px;
+            -khtml-border-radius: 30px;
+            -webkit-border-radius: 30px;
+    
+}
+
+#profilecontainer h4{
+    
+    color: black;
+    font-family: sans-serif ;
+    
+    
+  
+}
+
+
+#profilecontainer h3{
+    
+    color: black;
+    font-family: sans-serif ;
+    
+    
+  
+}
+#profilecontainer #profiledata {
+    
+    background-color: #B2E6FF;
+    
+    
+  
+}
+
+#profiledata h3 {
+    
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+#profiledata {
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15%;
+    text-align: center;
+    
+}
+
+#slider1_container{
+    
+    size: contain;
+    
+}
+
+#nav li{
+       background-color: transparent;
+       
+       
+        
+        display: inline;
+       font-family: 'Gloria Hallelujah', cursive;
+        float: none;
+        text-align: center;
+        margin:5px;
+        
+       }
+       
+#nav li a:hover{
+    
+    background-color: white;
+    
+     -webkit-transition: background 0.3s ease-in;
+        -moz-transition: background 0.3s ease-in;
+        -ms-transition: background 0.3s ease-in;
+        -o-transition: background 0.3s ease-in;
+        transition: background 0.3s ease-in;
+    
+    border-top-left-radius:10%;
+border-top-right-radius:50%;
+border-bottom-right-radius:10%;
+border-bottom-left-radius:50%; 
+
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: -6px;
+    margin-right: -6px;
+   padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.logo-block-icon{
+    float:left;
+}
+
+.logo-block-text{
+    margin-top: 20px;
+    float:left;
+    
+
+}
+
+.logo-block{
+    float: left;
+    width: 30%;
+}
+
+
+#previous h3 { /* targets all h3's that are in a container with an id of previous */
+    color: Black;
+}
+
+
+
+#previous a{ /* targets all h3's that are in a container with an id of previous */
+    color: black;
+}
+
+#previous a:hover{ /* targets all h3's that are in a container with an id of previous */
+    color: #00BFFF;
+}
+
+#references h3{ /* targets all h3's that are in a container with an id of references */
+    color: black;
+}
+
+#previousheader h2 {
+    
+    color: black;
+}
+
+#referenceheader h2{
+    color:black;
+}
+
+
+
+#headspan img{
+    
+float:left;
+    
+  
+}
+
+#title{
+    
+    float:left;
+    margin-top: 10px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+#title p{
+    
+    color: white;
+}
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) { 
+	    #previous{
+    
+    color:black;
+   size:contain;
+    text-align:center;
+    padding-top: 50px;
+   
+}}
+
+
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	   .logo-block{
+	       float: none;
+           width: 100%;
+           text-align: center;
+	   }
+       .logo-block-icon, .logo-block-text{
+           float: none;
+       }
+       #nav li{
+        width: 100%;
+        float: none;
+        text-align: center;
+       }
+       
+       #previous{
+    
+    color:black;
+   size:contain;
+    text-align:center;
+    padding-top: 50px;
+   
+}
+
+
+
+
+
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) { 
+
+}
+	    
+	
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	     #headspan.container{
+            width: 100%;
+        }
+	   .logo-block{
+           float: none;
+           width: 100%;
+           text-align: center;
+       }
+       .logo-block-icon, .logo-block-text{
+           float: none;
+       }
+       #nav li{
+        width: 100%;
+        float: none;
+        text-align: center;
+       }
+       #nav li{
+            margin: 0 5px;
+       }
+       
+       #previous{
+    
+    color:black;
+   size:contain;
+    text-align:center;
+    padding-top: 50px;
+   
+}
+
+}
+	
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) { 
+	     #headspan.container{
+            width: 100%;
+        }
+	   .logo-block{
+           float: none;
+           width: 100%;
+           text-align: center;
+       }
+       .logo-block-icon, .logo-block-text{
+           float: none;
+       }
+       #nav li{
+        width: 100%;
+        float: none;
+        text-align: center;
+       }
+       #nav li{
+            margin: 0 5px;
+       }
+
+#previous{
+    
+    color:black;
+   size:contain;
+    text-align:center;
+    padding-top: 50px;
+   
+}
+
+
+}
+	
+
+
+
+
+#hero
+{
+    border-top:solid #00BFFF 2px; ;
+    padding-top: 1%;
+    display: block;
+    text-align: center;
+    
+    font-weight: bold;
+    font-family: "Lato",sans-serif;
+    
+    
+    
+}
+
+
+
+#heroheader h2{
+    
+    color: black;
+    
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#heroheader p{
+    
+    color: black;
+    
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+   
+
+#previous{
+    
+    color:black;
+   size:contain;
+    text-align:center;
+    padding-top: 50px;
+   
+}
+#aida{
+    
+    border-radius: 50%;
+}
+
+
+
+
+img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  
+  -webkit-transition: all 0.5s ease-in-out; /* Safari and Chrome */
+  	-moz-transition: all 0.5s ease-in-out; /* Firefox */
+  	-o-transition: all 0.5s ease-in-out; /* IE 9 */
+  	-ms-transition: all 0.5s ease-in-out; /* Opera */
+  	transition: all 0.5s ease-in-out;
+}
+
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+    
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1.12,1.12);
+    -moz-transform:scale(1.12,1.12);
+    
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+
+
+    
+   
+}
+
+
+#previousheader h2{
+    
+    padding-top: 1%;
+    display: block;
+    font-weight: bold;
+   font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+#previous p{
+    
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 16px;
+    
+    
+    
+}
+
+#background{
+  
+    background-image:url('background.fw.png');
+    background-repeat: no-repeat; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center bottom ; 
+    background-size:contain;
+
+
+}
+
+#image1,#image2,#image3,#image4,#image5 #images6{
+    
+    size:contain;
+  
+
+}
+
+#image1,#image2,#image3,#image4,#image5,#image6, a:hover{
+   
+   size: contain;
+   
+}
+
+
+
+
+#map-canvas{
+    background-color: black;
+    background-size: 310px;
+	height: 386px;
+    size:contain;
+}
+
+#contactbutton{
+
+
+line-height: 38px;
+color: #FFF;
+background-color: #00BFFF;
+display: inline-block;
+height: 38px;
+color: #555;
+text-align: center;
+font-size: 11px;
+font-weight: 600;
+text-decoration: none;
+letter-spacing: .1rem;
+text-transform: uppercase;
+border: 1px solid white;
+white-space: nowrap;
+border-radius: 4px;
+box-sizing: border-box;
+cursor: pointer;
+margin-bottom: 10px;
+width: 150px;
+font-family: 'Gloria Hallelujah', cursive;
+
+
+}
+
+#experience a {
+    
+    color:black;
+}
+
+#experience a:hover {
+    
+   color: #00BFFF; border-bottom: solid white 3px;
+}
+
+#contactbutton a:hover{
+    
+  color: black; border-bottom: solid white 3px;
+
+}
+#contactresponce{
+    
+    margin-left: 200px;
+}
+
+#portfolioreturn{
+    
+    text-align: center;
+}
+#portfolioreturn a{
+    
+   color: black;
+}
+
+#references{
+text-align: center;
+color: black;
+background-color:#B2E6FF;
+margin-top: 5px;
+
+margin-bottom:20px;
+   
+}
+
+#aboutandrew h3{
+    
+    color: black;
+    font-family: 'Gloria Hallelujah', cursive;
+
+}
+
+#aboutandrew h4{
+    font-family: 'Gloria Hallelujah', cursive;
+    color: black;
+}
+
+#aboutandrew p{
+    
+    padding-right: 30px;
+    
+}
+#footernav li{
+    
+    font-size: small;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    display:block;
+    text-align: center;
+    text-transform:uppercase;
+    
+}
+
+
+#cycler{position:initial;}
+#cycler img{position:absolute;z-index:1}
+#cycler img.active{z-index:2}
+
+
+#contactformdiv{
+   position:center;
+  display: inline;
+}
+
+#contactformdiv input:focus{
+
+    background-color: #00BFFF;
+
+}
+
+#htmlform{
+    
+    display:inline-block;
+}
+
+
+#contactformdiv textarea:focus{
+
+    background-color: #00BFFF;
+
+}
+
+#references p{
+text-align: left;
+font-size:medium;
+padding-right: 15px;
+}
+
+#referenceheader h2{
+    
+    text-align:center;
+    font-family: 'Gloria Hallelujah', cursive;
+    
+    text-decoration: underline;
+}
+#references h4{
+    color:black;
+    padding-right: 15px;
+    
+}
+
+#footer{
+  border-top: solid #00BFFF 2px;
+padding-top:10px;
+background-color: black;
+}
+
+#footer p{
+    
+    color: white;
+}
+
+#social{
+    
+    margin-left: 10px;
+}
+
+#footer a{
+    
+    color:#00BFFF;
+    
+    
+}
+
+#footer a:hover{
+    
+    border-bottom:solid white 2px;
+}
+
+#footerimage{
+margin-right: 14px;
+margin-bottom: 4px;
+border: solid white 1px;
+float: left;
+
+}
+
+#fbimage{
+    
+margin-right: 14px;
+margin-bottom: 4px;
+
+float: left;  
+    
+}
+
+#twitterimage{
+margin-right: 14px;
+margin-bottom: 4px;
+border: solid white 1px;
+float: left; 
+    
+}
+
+#linkedinimage{
+    
+margin-right: 14px;
+margin-bottom: 4px;
+border: solid white 1px;
+float: left; 
+      
+    
+}
+    
+
+#rheader{
+    
+    color:black;
+}
+
+#copyright{
+    margin-top: 20px;
+    text-align:center;
+    
+}
+
+#contactheader{
+    
+   padding-top: 1%;
+    display: block;
+    font-weight: bold;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    
+    
+    
+}
+
+#contactheader h2{
+    
+    color:black;
+    font-family: 'Gloria Hallelujah', cursive;
+    
+    
+}
+
+#aboutheader{
+    
+      padding-top: 1%;
+    display: block;
+    font-weight: bold;
+    font-family: "Lato",sans-serif;
+    text-align: center;
+    text-decoration: underline; 
+    
+}
+#aboutheader h2{
+    
+    color:black;
+}
+
+#contact{
+    
+    text-align: center;
+   
+}

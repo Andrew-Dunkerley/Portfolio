@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Bootstrap</title>
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/custom.css" rel="stylesheet">
+      <link href="css/prettify.css" rel="stylesheet">
+   </head>
+
+   <body onload="prettyPrint()">
+      <!-- main-wrapper for positioning
+      ================================================== -->
+      <div id="main-warpper" class="container">
+
+         <!-- NAVBAR
+         ================================================== -->
+         <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+         <div class="container navbar-wrapper">
+            <div class="navbar navbar-inverse">
+               <div class="navbar-inner">
+                  <ul class="nav">
+                     <li><a class="brand" href="index.html">Bootstarp</a></li>
+                     <li><a href="bootstrap_css.html">CSS</a></li>
+                     <li><a href="bootstrap_js.html">JS</a></li>
+                     <li class="active"><a href="#">BMI Site</a></li>
+                  </ul>
+               </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+
+         </div><!-- /.container navbar-wrapper -->
+
+         <!-- ================================ content-wrapper -->
+         <div id="content-wrapper">
+
+            <h1>Body Mass Index (BMI) with Bootstrap</h1>
+
+            <nav>
+               <ul class="nav nav-pills">
+                  <li class="active"><a href="#">Template</a></li>
+                  <li><a href="#index-page">Index page</a></li>
+                  <li><a href="#calc-page">BMI Calculator page</a></li>
+               </ul>
+            </nav>
+
+            <p>Our aim is to demonstrate the approach to build a site using Bootstrap as the framework.  Use the navigation in the <a target="_blank" href="demo_bmi/index.html">BMI Site</a> to see the final site built in this exercise.</p>
+
+            <p>Following the <a href="http://chubkin.heroku.com/tutorials/show/css/_approach">Approach exercise</a>, we will code the layout, typography, navigation and finnish with the detail of the design.</p>
+
+            <h2>Template page</h2>
+            <p>We start by building a template of the common HTML and CSS accross the site.</p>
+            <h3>Layout</h3>
+
+            <p>Here is a doodle for the BMI index pages</p>
+
+            <p><img src="img/bmi_doodle.png" alt="bmi index page doodle"/></p>
+
+            <p>And a second BMI calculator page.</p>
+
+            <p><img src="img/bmi_calculator_doodle.png" alt="bmi calculator page doodle"/></p>
+
+            <p>The page layouts have the navigation bar, secondary navigation and footer common accross pages and only the content layout changes.  We can therefore create a template layout page to use for both pages.</p>
+
+            <div class="well exercise">
+               <h4>Exercise</h4>
+               <ul>
+                  <li>Copy the following HTML code and save it as, <code>bmi_template.html</code>.</li>
+                  <li>                     <pre class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+   &lt;head&gt;
+      &lt;meta charset="utf-8"&gt;
+      &lt;title&gt;BMI with Bootstrap &lt;/title&gt;
+      &lt;link href="css/bootstrap.css" rel="stylesheet"&gt;
+      &lt;link href="css/bmi.css" rel="stylesheet"&gt;
+   &lt;/head&gt;
+
+   &lt;body&gt;
+      &lt;!-- main-wrapper for positioning
+      ================================================== --&gt;
+      &lt;div class="container"&gt;
+
+         &lt;!-- NAVBAR
+         ================================================== --&gt;
+         &lt;nav&gt;
+            &lt;p&gt;TODO: insert Navigation bar&lt;/p&gt;
+         &lt;/nav&gt;
+
+         &lt;!-- Content
+         ================================================== --&gt;
+         &lt;div id="content-wrapper"&gt;
+            &lt;p&gt;TODO: insert content&lt;/p&gt;
+         &lt;/div&gt;&lt;!-- /#content-wrapper --&gt;
+
+         &lt;!-- Secondary navigation
+         ================================================== --&gt;
+         &lt;nav class="nav2"&gt;
+            &lt;div class="row"&gt;
+               &lt;h1 class="pull-right"&gt;Click an image!&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;!-- Navigation row with three columns --&gt;
+            &lt;div class="row"&gt;
+               &lt;div class="span4"&gt;
+                  &lt;p&gt;TODO: insert secondary navigation content&lt;/p&gt;
+               &lt;/div&gt;&lt;!-- /.span4 --&gt;
+               &lt;div class="span4"&gt;
+                  &lt;p&gt;TODO: insert secondary navigation content&lt;/p&gt;
+               &lt;/div&gt;&lt;!-- /.span4 --&gt;
+               &lt;div class="span4"&gt;
+                  &lt;p&gt;TODO: insert secondary navigation content&lt;/p&gt;
+               &lt;/div&gt;&lt;!-- /.span4 --&gt;
+            &lt;/div&gt;&lt;!-- /.row --&gt;
+         &lt;/nav&gt;&lt;!-- /.nav --&gt;
+
+         &lt;!-- FOOTER --&gt;
+         &lt;footer&gt;
+            &lt;p&gt;2012 Chubkin :) &middot; &lt;a href="#"&gt;Privacy&lt;/a&gt; &middot; &lt;a href="#"&gt;Terms&lt;/a&gt;&lt;/p&gt;
+         &lt;/footer&gt;
+
+      &lt;/div&gt;&lt;!-- /#main-wrapper --&gt;
+
+      &lt;!-- Bootstrap --&gt;
+      &lt;script src="js/jquery-latest.js"&gt;&lt;/script&gt;
+      &lt;script src="js/bootstrap.js"&gt;&lt;/script&gt;
+
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre></li>
+                  <li>Open <code>bmi_template.html</code> in Chrome.</li>
+                  <li>The <code>&lt;div class="container"&gt;</code> is the the main wrapper <code>div</code> for the whole page.  Bootstrap CSS class <a target="_blank" href="http://twitter.github.com/bootstrap/scaffolding.html#layouts">container</a> sets <code>width: 940px;</code> and centres the container by setting the left and right margins to <code>auto</code>.  Select the <code>&lt;div class="container"&gt;</code> in the developer window and see the CSS</li>
+                  <li>Being a parent branch, the <code>container</code> class ensures alignment of the page.</li>
+                  <li>Next, we define <code>div</code>s for the navbar and content rows and leave a TODO note.</li>
+                  <li>The layout for the secondary navigation has two rows, with three columns in the second row.  Bootstrap provides a <a target="_blank" href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem">grid</a> system with 12 columns, making for a 940px wide container.  Select the second <code>nav</code> element in the developer window and note the use of <code>row</code> and <code>span4</code> to achieve the three equal width columns (simply 4 &times; 3 as the <code>row</code> is divided into 12 columns).</li>
+                  <li>Finally, the <code>footer</code> elements sits nicely within the main <code>container</code>.</li>
+               </ul>
+            </div><!-- /.exercise -->
+
+            <p>In the first iteration, we have created the basic layout common to both pages.  This can be validated and checked before moving onto  implementing navigation.</p>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+
+            <h3>Navigation</h3>
+            <p>The site has a common navigation bar and a secondary navigation with an image hotspot and a Javascript dropdown effect.</p>
+            <h3>Navigation bar</h3>
+            <p>Bootstrap provides a range of <a target="_blank" href="http://twitter.github.com/bootstrap/components.html#navbar">navigation bars</a> we can utilise.   These are essentially unordered lists with sufficient wrapping <code>div</code> elements to style the navigation.</p>
+
+            <div class="well exercise">
+               <h4>Exercise</h4>
+               <ul>
+                  <li>Edit the <code>bmi_template.html</code> file and replace, <code>&lt;p&gt;TODO: insert Navigation bar&lt;/p&gt;</code> with the following code                      <pre class="prettyprint">
+&lt;div class="navbar-wrapper"&gt;
+   &lt;div class="navbar navbar-inverse"&gt;
+      &lt;div class="navbar-inner"&gt;
+         &lt;ul class="nav"&gt;
+            &lt;li class="active"&gt;&lt;a class="brand" href="#"&gt;BMI&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="bmi_calculator.html"&gt;BMI Calculator&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+      &lt;/div&gt;&lt;!-- /.navbar-inner --&gt;
+   &lt;/div&gt;&lt;!-- /.navbar --&gt;
+&lt;/div&gt;&lt;!-- /.navbar-wrapper --&gt;
+</pre></li>
+                  <li>As the heart of the navigation is an unordered list of hyperlinks.  The rest of the wrapping <code>div</code> elements allow for CSS styles to be applied in a cumulative fashion for more maintainable code.</li>
+                  <li>Open <code>bmi_template.html</code> in Chrome.</li>
+                  <li>We have used a Bootstrap component <a target="_blank" href="http://twitter.github.com/bootstrap/components.html#navbar">Navbar</a> for the main navigation.  This uses a set of Bootstrap CSS classes, namely, <code>navbar navbar-inverse navbar-inner nav</code> and <code>active</code>.  In the developer window, select the <code>nav</code> HTML code to see the CSS properties. </li>
+               </ul>
+            </div><!-- /.exercise -->
+
+            <h4>Secondary navigation</h4>
+            <p>Use the secondary navigation in the <a target="_blank" href="bmi_index.html">BMI Site</a> to see the Javascript transition when an image is clicked and consider the following code.</p>
+            <pre class="prettyprint">
+&lt;a data-toggle="collapse" data-target="#dt1"&gt;&lt;img class="img-circle" src="img/img-01.jpg"&gt;&lt;/a&gt;
+&lt;div id="dt1" class="collapse"&gt;
+   &lt;h2&gt;Health check!&lt;/h2&gt;
+   &lt;p&gt;A good indicator of general health is the BMI. It is your weight divided by your height squared.&lt;/p&gt;
+   &lt;p&gt;&lt;a class="btn" href="bmi_calculator.html"&gt;Calculate your BMI &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+            <ul>
+               <li>Javascript dropdown transitions are essentially achieved with a trigger element, such as a hyperlink, toggling the CSS <code>display</code> property to <code>none</code> and <code>visible</code>.</li>
+               <li>Note the hyperlink has the HTML5 data attributes, <code>data-toggle="collapse"</code> and <code>data-target="#dt1"</code>.  This is  unobtrusive Javascript, the hyperlink with <code>data-target="#dt1"</code> is associated with the element with the same <code>id</code>, in this case <code>&lt;div id="dt1"</code>; hence, clicking the link toggles the <code>div</code> CSS display property to be hidden or visible (Much better than obtrusive JS with additional DHTML markup such as <code>onclick</code>).</li>
+            </ul>
+
+            <div class="well exercise">
+               <h4>Exercise</h4>
+               <p>Being common to both page, we can add the content of the secondary navigation to the layout in <code>bmi_template.html</code> file.</p>
+               <ul>
+                  <li>Edit the <code>bmi_template.html</code> file and replace,                      <pre class="prettyprint">                     
+&lt;!-- Secondary navigation
+================================================== --&gt;
+&lt;nav class="nav2"&gt;
+   &lt;div class="row"&gt;
+      &lt;h1 class="pull-right"&gt;Click an image!&lt;/h1&gt;
+   &lt;/div&gt;
+   &lt;!-- Navigation row with three columns --&gt;
+   &lt;div class="row"&gt;
+      &lt;div class="span4"&gt;
+         &lt;p&gt;TODO: insert secondary navigation content&lt;/p&gt;
+      &lt;/div&gt;&lt;!-- /.span4 --&gt;
+      &lt;div class="span4"&gt;
+         &lt;p&gt;TODO: insert secondary navigation content&lt;/p&gt;
+      &lt;/div&gt;&lt;!-- /.span4 --&gt;
+      &lt;div class="span4"&gt;
+         &lt;p&gt;TODO: insert secondary navigation content&lt;/p&gt;
+      &lt;/div&gt;&lt;!-- /.span4 --&gt;
+   &lt;/div&gt;&lt;!-- /.row --&gt;
+&lt;/nav&gt;&lt;!-- /.nav --&gt;
+</pre> with the following code:                      <pre class="prettyprint">
+&lt;!-- Secondary navigation
+================================================== --&gt;
+&lt;div class="nav2"&gt;
+   &lt;div class="row"&gt;
+      &lt;h1 class="pull-right"&gt;Click an image!&lt;/h1&gt;
+   &lt;/div&gt;
+   &lt;!-- Three columns of text below the carousel --&gt;
+   &lt;div class="row"&gt;
+      &lt;div class="span4"&gt;
+         &lt;a data-toggle="collapse" data-target="#dt1"&gt;&lt;img class="img-circle" src="img/img-01.jpg"&gt;&lt;/a&gt;
+         &lt;div id="dt1" class="collapse"&gt;
+            &lt;h2&gt;Health check!&lt;/h2&gt;
+            &lt;p&gt;A good indicator of general health is the BMI. 
+               It is your weight divided by your height squared.&lt;/p&gt;
+            &lt;p&gt;&lt;a class="btn" href="bmi_calculator.html"&gt;Calculate your BMI &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;&lt;!-- /.span4 --&gt;
+      &lt;div class="span4"&gt;
+         &lt;a data-toggle="collapse" data-target="#dt2"&gt;&lt;img class="img-circle" src="img/img-02.jpg"&gt;&lt;/a&gt;
+         &lt;div id="dt2" class="collapse"&gt;
+            &lt;h2&gt;BMI facts&lt;/h2&gt;
+            &lt;p&gt;What is the body mass index (BMI)? How is it categorised? 
+               and which age groups does it apply to?&lt;/p&gt;
+            &lt;p&gt;&lt;a class="btn" target="_blank" href="http://en.wikipedia.org/wiki/Body_mass_index"&gt;
+               Read all abou it! &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;&lt;!-- /.span4 --&gt;
+      &lt;div class="span4"&gt;
+         &lt;a data-toggle="collapse" data-target="#dt3"&gt;&lt;img class="img-circle" src="img/img-03.jpg"&gt;&lt;/a&gt;
+         &lt;div id="dt3" class="collapse"&gt;
+            &lt;h2&gt;Healthy eating&lt;/h2&gt;
+            &lt;p&gt;Food, material consisting of protein, carbohydrate, and fat used to sustain growth.&lt;/p&gt;
+            &lt;p&gt;&lt;a class="btn" target="_blank" 
+               href="http://www.nhs.uk/LiveWell/healthy-eating/Pages/Healthyeating.aspx"&gt;
+               Healthy eating &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;&lt;!-- /.span4 --&gt;
+   &lt;/div&gt;&lt;!-- /.row --&gt;
+&lt;/div&gt;&lt;!-- /.nav2 --&gt;   
+
+</pre></li>
+                  <li>In Aptana, right-mouse click and select Source > format</li>
+                  <li>Open <code>bmi_template.html</code> in Chrome and click an image to see the JS transition.</li>
+                  <li>Note we have used the Bootstrap helper class <a target="_blank" href="http://twitter.github.com/bootstrap/components.html#misc">pull-right</a> to float the heading to the right of the row.  Similarly, the hyperlinks in the drop down panels have been styled with the Bootstrap <a target="_blank" href="http://twitter.github.com/bootstrap/components.html#buttonGroups">btn</a> CSS class.</li>
+               </ul>
+            </div><!-- /.exercise -->
+            <p class="pull-right"><a href="#">Back to top</a></p>
+
+            <h3>Completing the template</h3>
+            <p>In this third iteration, we apply the common CSS to complete the template.  There is little to do here, centring of text for the secondary navigation and styling the footer.</p>
+
+            <div class="well exercise">
+               <h4>Exercise</h4>
+               <p>The <code>bmi_template.html</code> file already has a <code>link</code> to the <code>css/bmi.css</code> file.</p>
+               <ul>
+                  <li>Create the <code>bmi.css</code> file in the <code>css</code> directory and insert the following code into it.                      <pre class="prettyprint">                     
+/* GLOBAL STYLES
+ -------------------------------------------------- */
+
+/* Main content
+ -------------------------------------------------- */
+#content-wrapper {
+    min-height: 250px;
+}
+
+/* Secondary navigation
+ -------------------------------------------------- */
+
+/* Center align the text within the three columns */
+.nav2 .span4 {
+    text-align: center;
+}
+.nav2 .span4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav2 h2 {
+    font-weight: normal;
+}
+
+/* Footer
+ -------------------------------------------------- */
+footer {
+    margin-top: 30px;
+    padding: 120px 50px 20px 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+</pre></li>
+                  <li>Open <code>bmi_template.html</code> in Chrome to see the common template we can reuse to create other pages in the site.</li>
+                  <li>Note we have have applied a <code>min-height</code> to the content div to see the page porportionality.  In subsequant exercises we will replace this with the content for the particular page.</li>
+               </ul>
+            </div><!-- /.exercise -->
+            <p class="pull-right"><a href="#">Back to top</a></p>
+
+            <h2 id="index-page">BMI index page</h2>
+            <p>Our aim is to reuse the template file we created above and insert the content for the index page.  See the <a target="_blank" href="demo_bmi/index.html">BMI Site</a>; we have to include a carousel in the main content division.</p>
+            <p>Essentially a carousel is a series of <code>div</code> with the class <code>item</code>.  The <code>div</code> can contain any HTML element including text, images, sound or video.  As with all unobtrusive Javascript element ids are often used to trigger an event, in this example it is in the following line of code:                <pre class="prettyprint">
+&lt;a class="left carousel-control" href="#myCarousel" data-slide="prev">‹&lt;/a>  
+</pre> Note the <code>href="#myCarousel"</code>, the same <code>id</code> as the <code>div</code> containing the carousel item divs.  The data needed for the Javascript to complete the transition is passed using HTML5 data attributes, such as <code>data-slide="prev"</code>. </p>
+            <div class="well exercise">
+               <h4>Exercise</h4>
+               <ul>
+                  <li>Copy the <code>bmi_template.html</code> file and save it as <code>bmi_index.html</code>.</li>
+                  <li>Edit the <code>bmi_index.html</code> file and in the main content division, replace, <code>&lt;p&gt;TODO: insert content&lt;/p&gt;</code> with the following code:                      <pre class="prettyprint">
+&lt;!-- Carousel
+================================================== -->
+&lt;div id="myCarousel" class="container carousel">
+   &lt;div class="carousel-inner">
+      &lt;div class="item active">
+         &lt;img src="img/img-01.jpg" alt="">
+         &lt;div class="well carousel-caption">
+            &lt;h1>Health check!&lt;/h1>
+            &lt;p class="lead">A rough guide to health is the BMI.&lt;/p>
+            &lt;p>&lt;a class="btn btn-large btn-primary" href="view_bmi_form.html">
+             Calculate your BMI &amp;raquo;&lt;/a>&lt;/p>
+         &lt;/div>
+      &lt;/div>
+      &lt;div class="item">
+         &lt;img src="img/img-02.jpg" alt="">
+         &lt;div class="well carousel-caption">
+            &lt;h1>BMI facts&lt;/h1>
+            &lt;p class="lead">What is the body mass index (BMI)? How is it categorised?.&lt;/p>
+            &lt;a class="btn btn-large btn-primary" target="_blank" 
+             href="http://en.wikipedia.org/wiki/Body_mass_index">Read all about it &amp;raquo;&lt;/a>
+         &lt;/div>
+      &lt;/div>
+      &lt;div class="item">
+         &lt;img src="img/img-03.jpg" alt="">
+         &lt;div class="carousel-caption">
+            &lt;h1>Healthy eating&lt;/h1>
+            &lt;p class="lead">Food, material consisting essentially of protein, 
+             carbohydrate, and fat used in the body of an organism to sustain growth, 
+             repair, and vital processes and to furnish energy.&lt;/p>
+            &lt;a class="btn btn-large btn-primary" 
+             href="http://www.nhs.uk/livewell/healthy-eating/pages/healthyeating.aspx"> 
+             Healthy eating &amp;raquo;&lt;/a>
+         &lt;/div>
+      &lt;/div>
+   &lt;/div>
+   &lt;a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;&lt;/a>
+   &lt;a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;&lt;/a>
+&lt;/div>&lt;!-- /.carousel -->
+</pre></li>
+                  <li>Right-mouse click and select Source > format</li>
+                  <li>Note the hyperlinks (toward the end of the code) used to trigger the carousel have <code>href="#myCarousel"</code>, the same id as the <code>div</code> containing the carousel item divs.</li>
+                  <li>The data needed for the Javascript to complete the transition is passed using HTML5 data attributes, such as <code>data-slide</code></li>
+                  <li>View the <code>bmi_index.html</code> file in Chrome and click through the images on the Carousel.</li>
+               </ul>
+               <p>And for a little style to the caption and the carousel control arrows:</p>
+               <ul>
+                  <li>Insert the following into <code>bmi.css</code>file.
+                  <pre class="prettyprint">                     
+/* CUSTOMIZE THE CAROUSEL
+ -------------------------------------------------- */
+.carousel-control {
+    background-color: transparent;
+    border: 0;
+    font-size: 120px;
+    margin-top: 0;
+}
+
+.carousel-caption {
+    max-width: 550px;
+    padding: 20px;
+    margin: 0 0 30px 70px;
+    color: #fff;
+    background-color: #000000;
+    border-color:#000000;
+    opacity: 0.55;
+}
+.carousel-caption h1, .carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+</pre>                  </li>
+                  <li>View the <code>bmi_index.html</code> file in Chrome and inspect the CSS code in the developer window.</li>
+
+               </ul>
+
+            </div>
+
+            <p class="pull-right"><a href="#">Back to top</a></p>
+
+            <h2 id="calc-page">BMI claculator page</h2>
+            <p>Our aim is to reuse the template file we created above and insert the content for the BMI calculator page.  See the <a target="_blank" href="demo_bmi/index.html">BMI Site</a>; we have to include a form in the first column and some explanatory text in the second column of the main content row.  All straight forward HTML and CSS.</p>
+            <div class="well exercise">
+               <h4>Exercise</h4>
+               <ul>
+                  <li>Copy the <code>bmi_template.html</code> file and save it as <code>bmi_calculator.html</code>.</li>
+                  <li>Edit the <code>bmi_calculator.html</code> file and in the main content division, replace, <code>&lt;p&gt;TODO: insert content&lt;/p&gt;</code> with the following code:                      <pre class="prettyprint">
+&lt;!-- Row with 2 span6 columns --&gt;
+&lt;div class="row"&gt;
+   &lt;div class="span6"&gt;&lt;!-- first column --&gt;
+      &lt;!-- bmi Form --&gt;
+      &lt;div class="well bmi-form"&gt;
+         &lt;h2&gt;BMI Calculator&lt;/h2&gt;
+         &lt;form class="form-horizontal" method="get" action="#"&gt;
+            &lt;div class="control-group"&gt;
+               &lt;label class="control-label" for="weight"&gt;Weight&lt;/label&gt;
+               &lt;div class="controls"&gt;
+                  &lt;input type="text" id="weight" placeholder="Weight in Kilograms"&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="control-group"&gt;
+               &lt;label class="control-label" for="height"&gt;Height&lt;/label&gt;
+               &lt;div class="controls"&gt;
+                  &lt;input type="text" id="height" placeholder="Height in Meters"&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="control-group"&gt;
+               &lt;div class="controls"&gt;
+                  &lt;button type="submit" class="btn"&gt;Calculate BMI&lt;/button&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+      &lt;/div&gt;&lt;!-- /.bmi_form --&gt;
+   &lt;/div&gt;&lt;!-- /.first column --&gt;
+   &lt;div class="span6"&gt;&lt;!-- second column --&gt;
+      &lt;p class="alert alert-info"&gt;The Body Mass Index(BMI) is a good way to check if you are a 
+       healthy weight. Use our BMI calculator to check  you are a healthy weight for your height.&lt;/p&gt;
+      &lt;p class="alert alert-danger"&gt;For adults, a BMI of less than 15 is considered very severly 
+       underweight and a BMI of over 40 very severly obese.&lt;/p&gt;
+      &lt;p class="alert alert-success"&gt;A normal healthy weight has a BMI of 18.5 to 25.&lt;/p&gt;
+   &lt;/div&gt;&lt;!-- /.second column --&gt;
+&lt;/div&gt;</pre></li>
+                  <li>Right-mouse click and select Source > format</li>
+                  <li>View the <code>bmi_calculator.html</code> file in Chrome and inspect the CSS code in the developer window.</li>
+            </div>
+
+         </div><!-- /.content-wrapper -->
+         <p class="pull-right"><a href="#">Back to top</a></p>
+
+         <!-- FOOTER -->
+         <footer>
+            <p>2012 &ndash; Chubkin &middot; :)</p>
+         </footer>
+
+      </div><!-- /#main-wrapper -->
+
+      <!-- Bootstrap -->
+      <script src="js/jquery-latest.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/prettify.js"></script>
+   </body>
+</html>
