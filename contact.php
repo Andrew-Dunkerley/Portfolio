@@ -206,3 +206,14 @@
 <footer>
 
 
+
+<?php include "aidb/includes/footer.php"?>
+        
+    
+
+</footer>
+</body>
+
+
+
+</html>
